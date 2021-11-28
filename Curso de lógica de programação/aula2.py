@@ -10,3 +10,4 @@ else:
 # Se atenta a comparação de número e string. Sempre fazer a tranformação. Ultilizar sempre, os  5Q's
 
   
+print(5+5)
