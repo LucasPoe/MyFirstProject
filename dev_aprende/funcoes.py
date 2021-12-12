@@ -58,7 +58,7 @@ somar (10,20,5, b=5) '''
 # Kwargs são os arguemtos ilimiatados, para os nomeados "**"
 # Quando não sabe a quantidade de argumentos que estará recebendo - nomeados ou posicionais 
 
-def fazer_calculo(nome,*args,**kwargs):
+''' def fazer_calculo(nome,*args,**kwargs):
   print(nome)
   print(args)
   print(kwargs)
@@ -68,8 +68,11 @@ def fazer_calculo(nome,*args,**kwargs):
     print(kwarg)
 fazer_calculo('Jeff',4,6,3,7,a=1,b=2,c=3)
 
-
-
+ '''
+# 1- De nomes sigficativo - nome da função, intenção 
+# 2- Funções pequenas que fazem apenas uma coisa
+# 3- Quanto menor a quantidade de argumentos, melhor - Max 3 Argumentos 
+# 4- Use funções para organizar seu código e economizar linha de código(DRY) Não se repita - Rotina 
 
 
 
