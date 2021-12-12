@@ -43,10 +43,30 @@ exibir_preco (nome_produto = 'iphone', preco = 5000)
 
 
  '''
-def gerar_objeto_personalizado(cor,*,altura,formato): print(cor,altura,formato)
+''' def gerar_objeto_personalizado(cor,*,altura,formato): print(cor,altura,formato)
 
 gerar_objeto_personalizado ('azul',altura=1.7, formato='quadrado' )
+ '''
+# Args - argumentos cuja valores, são varios, isto é caso precisa passar varios valores, ultilizar o '*' - Quantidade ilimitada de argumentos posicionais 
+''' def somar (*valores, b):
+    print(valores)
+    for valor in valores:
+      b = b + valor
+    print(b)
+somar (10,20,5, b=5) '''
 
+# Kwargs são os arguemtos ilimiatados, para os nomeados "**"
+# Quando não sabe a quantidade de argumentos que estará recebendo - nomeados ou posicionais 
+
+def fazer_calculo(nome,*args,**kwargs):
+  print(nome)
+  print(args)
+  print(kwargs)
+  for arg in args:
+    print(args)
+  for kwarg in kwargs.values():
+    print(kwarg)
+fazer_calculo('Jeff',4,6,3,7,a=1,b=2,c=3)
 
 
 
