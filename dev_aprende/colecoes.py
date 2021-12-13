@@ -133,7 +133,7 @@ pessoa.items() # Contenta tanto a chave quanto o valor
 for item in pessoa.items():
   print(item[1]) '''
 
-# Tuplas 
+''' # Tuplas 
 #Criação 
 sites = ('facebool')
 valores =(20,50)
@@ -142,7 +142,16 @@ print(sites[1])
 # União de tupla
 dados = sites + valores 
 # Tipo dinamico
+ '''
 
+# Arrays
+from array import array 
+numeros = array('i',[1,2,3,4,5])
+numeros.appende(10)
+numeros.insert(5,200)
+numeros.pop(1)
+numeros.remove(5)
+del numeros[1]
 
 
 
