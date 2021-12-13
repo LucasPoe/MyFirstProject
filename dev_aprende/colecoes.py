@@ -116,15 +116,32 @@ for produtos, precos in zip_longest(produtos,precos):
 
 
  '''
-
+''' 
 # Dicionários 
 # Criação, há duas maneiras 
 # chaves {chave,valor}
 pessoa = {'nome':'Carol','idade':18, 'altura':1.80}
-print(pessoa)
+# outra maneira 
+pessoa1 = dict(nome='Carol', idade=18, altura=1.80)
+print(pessoa1)
+# Acessar uma propriedade
+pessoa1 ['idade']
+pessoa.keys() # Todas as chaves disponiveis para o dicioario
+pessoa.values() # Acessa os valores que estão no dicionario
+pessoa.items() # Contenta tanto a chave quanto o valor 
+# iterar sobre um dicionario
+for item in pessoa.items():
+  print(item[1]) '''
 
-
-
+# Tuplas 
+#Criação 
+sites = ('facebool')
+valores =(20,50)
+# Acessando por indice
+print(sites[1])
+# União de tupla
+dados = sites + valores 
+# Tipo dinamico
 
 
 
