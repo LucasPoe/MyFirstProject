@@ -144,7 +144,7 @@ dados = sites + valores
 # Tipo dinamico
  '''
 
-# Arrays
+''' # Arrays
 from array import array 
 numeros = array('i',[1,2,3,4,5])
 numeros.appende(10)
@@ -152,10 +152,22 @@ numeros.insert(5,200)
 numeros.pop(1)
 numeros.remove(5)
 del numeros[1]
+ '''
+''' 
+# Range (geradores )
+for numero in range (10, 30 ,2):
+  print(numero)
+# Criar listas rapidamente 
+resultado = list(range(0,201, 10))
+print(resultado)
+ '''
 
+frutas = ['Maça','Laranja','Morango','Limão']
 
-
-
+for indice, frutas in enumerate(frutas, 0):
+  print(indice, frutas)
+  if indice == 3:
+    print(F'Número {indice} fruta {frutas} em promoção'  )
 
 
 
