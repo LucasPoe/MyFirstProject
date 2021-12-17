@@ -187,7 +187,7 @@ produtos = [
 
 produtos.sort(key=itemgetter('preco'))
 print(produtos) '''
-
+''' 
 #Desafio 2
 from operator import itemgetter
 equipamento = [('Tripé',300),('Câmera',1700), ('Iluminação',200)]
@@ -200,9 +200,24 @@ cotacao = [['usd',5.25],['brl', 1.56], ['eur',6.47]]
 
 cotacao.sort(key=itemgetter(1)) 
 print(cotacao)
+ '''
 
+# Filter 
+# Desafio
+vagas = [
+  ['vaga 1', 1200],
+  ['vaga 2', 2550],
+  ['vaga 3', 5000]
+]
 
+def vagas_2500 (salario):
+  if vagas[1] > 2500:
+    return True
+  else:
+    return False
 
+print(list(filter(vagas_2500,vagas)))
+print(list(map(vagas_2500,vagas)))
 
 
 
