@@ -202,7 +202,7 @@ cotacao.sort(key=itemgetter(1))
 print(cotacao)
  '''
 
-# Filter 
+''' # Filter 
 # Desafio
 vagas = [
   ['vaga 1', 1200],
@@ -220,7 +220,11 @@ print(list(filter(vagas_2500,vagas)))
 print(list(map(vagas_2500,vagas)))
 
 
+ '''
+ # SET 
+ # Lidando com valores unicos 
 
+ # JSON 
 
 
 
