@@ -162,12 +162,71 @@ resultado = list(range(0,201, 10))
 print(resultado)
  '''
 
-frutas = ['Maça','Laranja','Morango','Limão']
+''' frutas = ['Maça','Laranja','Morango','Limão']
 
 for indice, frutas in enumerate(frutas, 0):
   print(indice, frutas)
   if indice == 3:
     print(F'Número {indice} fruta {frutas} em promoção'  )
+
+ '''
+
+''' # Ordenando coleçoes (dicionario) atraves de propriedade
+#Desafio 1
+produtos = [
+  {'nome': 'Celular',
+    'preco': 1500
+  },
+  {'nome': 'Monitor',
+    'preco': 500
+  },
+  {'nome': 'Microfone',
+    'preco': 300
+  }
+] 
+
+produtos.sort(key=itemgetter('preco'))
+print(produtos) '''
+
+#Desafio 2
+from operator import itemgetter
+equipamento = [('Tripé',300),('Câmera',1700), ('Iluminação',200)]
+
+equipamento.sort(key=itemgetter(1), reverse=True)
+print(equipamento)
+
+#Desafio 3 
+cotacao = [['usd',5.25],['brl', 1.56], ['eur',6.47]]
+
+cotacao.sort(key=itemgetter(1)) 
+print(cotacao)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
