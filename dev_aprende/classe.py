@@ -19,7 +19,7 @@ teste = Cubo(520)
 c = teste.calcular_cubo()
 print(c)
   '''
-# Método construtor 
+''' # Método construtor 
 # Sintaxe - 
 # def __init__(self,[parâmetros]) 
   # código do método construtor # Self - referencia ao objeto
@@ -29,4 +29,19 @@ class Gato:
     print('Um gato é um animal', self.nome )
 
 nome_gato = input('Digite o nome de seu gato: ')
-g1 = Gato(nome_gato)
+g1 = Gato(nome_gato) '''
+
+class Cliente:
+  def __init__(self, nome, email, plano):
+    self.nome = nome
+    self.email = email
+    self.plano = plano
+
+nome = input("Digite seu nome: ")
+email = input("Digite seu email: ")
+plano = input("Digite seu Plano: ")
+
+
+cliente = Cliente(nome, email, plano)
+ 
+print(nome, email, plano)
