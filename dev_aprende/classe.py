@@ -44,4 +44,4 @@ plano = input("Digite seu Plano: ")
 
 cliente = Cliente(nome, email, plano)
  
-print(nome, email, plano)
+print(nome, email, plano) kj
