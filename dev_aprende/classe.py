@@ -124,7 +124,7 @@ monitor = MonitorFullHd()
 monitor.aumentar_claridade(5)
 monitor.diminuindo_claridade(5)
 
-  
+
 
 
 
