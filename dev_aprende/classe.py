@@ -29,11 +29,14 @@ class Gato:
     print('Um gato é um animal', self.nome )
 
 nome_gato = input('Digite o nome de seu gato: ')
-g1 = Gato(nome_gato) '''
+g1 ='''  
+''' Gato(nome_gato)
 
-class Cliente:
-  def __init__(self, nome, email, plano):
-    self.nome = nome
+class Cliente: # Nome da classe
+  padrao = 'filme' #Variavel da classes fixa, Não precisa instancia para acessar ]
+  # variaveis de classe
+  def __init__(self, nome, email, plano): # Iniciando uma classe com atributos 
+    self.nome = nome #Self significa ele mesmo(classe)
     self.email = email
     self.plano = plano
 
@@ -42,6 +45,55 @@ email = input("Digite seu email: ")
 plano = input("Digite seu Plano: ")
 
 
-cliente = Cliente(nome, email, plano)
- 
-print(nome, email, plano) kj
+cliente1 = Cliente(nome, email, plano)
+print(Cliente.nome)
+
+print(nome, email, plano) '''
+
+#Herança 
+class Pessoa:
+  def __init__(self,nome,idade):
+    self.nome = nome
+    self.idade = idade
+
+  def mostrar_nome(self):
+    print(self.nome)
+
+  def mostrar_idade(self):
+    print(self.idade)  
+
+class Estudante (Pessoa): #Classe estudante herdando Pessoa atraves dos parenteses 
+  def __init__ (self, nome, idade, mat):
+    Pessoa.__init__ (self, nome, idade) # Chamando o constutor da super classe 
+    self.mat = mat
+
+  def mostrar_mat (self):
+    print(self.mat)
+
+p = Pessoa ('Marcos', 30) # instanciando 
+p.mostrar_idade() # entrando em Pessoa na função mostrar 
+s = Estudante ('pedro', 20, 1000) # Instanciando - criando 
+s.mostrar_nome() # Mostando a função
+s.mostrar_mat()
+s.mostrar_idade()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
