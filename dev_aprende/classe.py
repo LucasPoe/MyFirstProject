@@ -49,7 +49,7 @@ cliente1 = Cliente(nome, email, plano)
 print(Cliente.nome)
 
 print(nome, email, plano) '''
-
+''' 
 #Herança 
 class Pessoa:
   def __init__(self,nome,idade):
@@ -77,21 +77,29 @@ s.mostrar_nome() # Mostando a função
 s.mostrar_mat()
 s.mostrar_idade()
 
+ '''
+''' 
+#Herança Multipla 
+
+class Pessoa:
+  def __init__(self,nome):
+    self.nome = nome
+
+  def nome_da_pessoa (self, nome):
+    print(self.nome)
+
+class Trabalho:
+  def __init__ (self, trabalho):
+    self.trabalho = trabalho 
+
+  def qual_trabalho (self):
+    print(self.trabalho)
+
+class Trabalhos(Pessoa, Trabalho):
+  pass
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ '''
 
 
 
