@@ -102,6 +102,70 @@ class Trabalhos(Pessoa, Trabalho):
  '''
 
 
+# Métodos abstratos 
+#Desafio 1
+
+from abc import ABC , abstractmethod
+
+class Monitor (ABC): # Passando o paramentro que deve ser seguido em todas as filhas 
+  def aumenta_claridade(self,pontos):
+    pass
+  def baixa_claridade(self,pontos):
+    pass
+
+class MonitorFullHd(Monitor): # Herando a classe abstact 
+  def aumentar_claridade(self,pontos):
+    print( f'Claridade aumentada em {pontos}')
+
+  def diminuindo_claridade(self,pontos):
+    print( f'Claridade diminuida em {pontos}')
+
+monitor = MonitorFullHd()
+monitor.aumentar_claridade(5)
+monitor.diminuindo_claridade(5)
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
