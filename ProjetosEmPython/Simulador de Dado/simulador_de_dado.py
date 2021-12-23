@@ -22,7 +22,7 @@ class simuladorDeDado: # Declarando a class
       self.eventos, self.valores = janela.Read()
         # Fazer alguma coisa com esses valores
         
-        while True:
+      while True:
             try: #Tratamento de exeção 
               self.eventos == 'sim':
               if resposta == 'sim' or resposta == 's'
